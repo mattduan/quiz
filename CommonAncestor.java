@@ -4,7 +4,7 @@
 
 public class CommonAncestor {
 
-  public class Node {
+        public static class Node {
 		int data;
 		Node left;
 		Node right;
@@ -50,10 +50,9 @@ public class CommonAncestor {
 	}
 	
 	public static void main(String[] args) {
-		CommonAncestor ca = new CommonAncestor();
 		Node[] nlist = new Node[14];
 		for (int i=0; i<14; i++)
-			nlist[i] = ca.new Node(i+1);
+			nlist[i] = new Node(i+1);
 		Node root = nlist[0];
 		root.left = nlist[1];
 		root.left.left = nlist[2];
